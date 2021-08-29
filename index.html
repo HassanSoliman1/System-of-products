@@ -1,0 +1,60 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+        <meta name="theme-color" content="#673AB6">
+
+
+    </head>
+    <body>
+
+
+        <div class="container py-5">
+
+            <label class="form-label" for="pNameId">Product Name</label>
+            <input class="form-control mb-4" id="pNameId">
+
+            <label class="form-label" for="pPriceId">Product Price</label>
+            <input class="form-control mb-4" id="pPriceId">
+
+            <label class="form-label" for="pCatId">Product Category</label>
+            <input class="form-control mb-4" id="pCatId">
+
+            <label class="form-label" for="pDescId">Product Description</label>
+            <textarea class="form-control mb-4" id="pDescId"></textarea>
+
+            <br>
+            <button onclick="addProduct()" class="btn btn-outline-info">Add Product</button>
+
+            <br><br>
+            <!--==================search-->
+            <input onkeyup="searchProduct(this.value)" class="form-control w-50 m-auto" placeholder="Search Product">
+
+
+            <br><br><br>
+
+            <table class="table">
+                <thead class="text-primary">
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th class="text-warning">Update</th>
+                    <th class="text-danger">Delete</th>
+
+                    <tbody id="tbody">
+
+                    </tbody>
+                                        
+                </thead>
+            </table>
+
+
+        </div>
+     
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>
